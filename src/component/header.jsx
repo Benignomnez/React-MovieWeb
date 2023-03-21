@@ -8,7 +8,7 @@ function Header({ onSearch }) {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const response = await fetch(
-      `http://www.omdbapi.com/?apikey=1ffb85e1&s=${search}`
+      `https://www.omdbapi.com/?apikey=1ffb85e1&s=${search}`
     );
     const data = await response.json();
     const total = parseInt(data.totalResults, 20);
