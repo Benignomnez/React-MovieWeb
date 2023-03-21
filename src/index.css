@@ -15,6 +15,7 @@
 .logo {
   height: 60px;
   margin-right: 10px;
+  max-width: 100%;
 }
 
 form {
@@ -67,6 +68,8 @@ footer i:hover {
   }
   .logo {
     margin-right: 0;
+    height: 50px;
+    max-width: 80%;
   }
   form {
     flex-direction: column;
@@ -81,15 +84,45 @@ footer i:hover {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .logo {
+    margin-right: 0;
+    height: 50px;
+    max-width: 80%;
+  }
+  form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  input[type="text"] {
+    width: 100%;
+  }
+  aside {
+    margin-top: 30px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    height: 40px;
+    max-width: 60%;
+  }
+}
+
 @media only screen and (min-device-width: 390px) and (max-device-width: 428px) and (orientation: portrait) {
   .header {
     font-size: 1em;
   }
   .logo {
-    height: 40px;
+    height: 30px;
+    max-width: 40%;
   }
   form {
     margin-top: 10px;
   }
 }
-

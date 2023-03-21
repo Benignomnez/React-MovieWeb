@@ -9,7 +9,7 @@ function Sidebar({ movies }) {
   }, [movies]);
 
   return (
-    <div style={{ display: "flex" }}>
+    <div style={{ display: "flex", justifyContent:"center"}}>
       <aside>
         <ul className="list-group">
           {movies.map((movie) => (
